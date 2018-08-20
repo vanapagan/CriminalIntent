@@ -107,14 +107,6 @@ public class CrimePagerActivity extends AppCompatActivity {
 
     }
 
-    private boolean isFirstItem(UUID crimeId) {
-        return isXthItem(crimeId, 0);
-    }
-
-    private boolean isLastItem(UUID crimeId) {
-        return isXthItem(crimeId, mCrimes.size() - 1);
-    }
-
     private boolean isXthItem(UUID crimeId, int position) {
         return mCrimes.get(position).getId() == crimeId;
     }
